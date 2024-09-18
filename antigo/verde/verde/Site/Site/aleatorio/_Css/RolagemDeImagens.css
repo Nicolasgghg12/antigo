@@ -1,0 +1,45 @@
+:root{
+    --corBordaImagens: rgb(177, 100, 0);
+}
+@keyframes jogos {
+    0%,20%{
+        top: 0px;
+    }   
+    21%,40%{
+        top: -400px;
+    } 
+    41%,60%{
+        top: -800px;
+    }
+    61%,80%{
+        top: -1200px;
+    }
+    81%,100%{
+        top: -1600px;
+    }
+}
+.ContainerContainerImagensRolagemDeImagens{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 6px solid var(--corBordaImagens);
+}
+.ContainerContainerImagensRolagemDeImagens .ContainerImagensRolagemDeImagens{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    animation: jogos 20s;
+    animation-iteration-count: infinite;
+}
+.ContainerContainerImagensRolagemDeImagens .ContainerImagensRolagemDeImagens Img{
+    width: 600px;
+    height: 400px;
+    display: block;
+    float: left;
+} 

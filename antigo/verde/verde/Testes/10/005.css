@@ -1,0 +1,79 @@
+:root{
+    --color-menu: rgb(6, 15, 100);
+    --color-boradaMenu: rgb(26, 95, 86);
+    --color-links: rgb(27, 173, 117);
+    --color-linksLetras: rgb(255, 255, 255);
+    --color-linkshover: rgba(83, 83, 83, 0.212);
+    --color-buscar: rgb(0,0,0);
+    --color-buscarPlaceHolder: rgb(0,0,0);
+    --color-nomeSite: rgb(255, 255, 255);
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    border: 3px solid var(--color-boradaMenu);
+    background-color: var(--color-menu);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+}
+header ul{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+    
+}
+header ul li{
+    display: inline-block;
+    list-style: none;
+}
+header ul li a{
+    display: block;
+    right: 0;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+    background-color: var(--color-links);
+    text-align: center;
+    color: var(--color-linksLetras);
+    position: relative;
+}
+header ul li a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: var(--color-linkshover);
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 2s;
+}
+header ul li a:hover::before{
+    width: 100%;
+    transition: all 2s;
+}
+header .Buscar{
+    width: 20%;
+    border: 2px solid var(--color-buscar);
+    height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    top: 70px;
+}
+header .Buscar::placeholder{
+    color: var(--color-buscarPlaceHolder);
+}
+header h1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 10px;
+    color: var(--color-nomeSite);
+    left: 5%;
+    transform:translateX(-5%);
+}

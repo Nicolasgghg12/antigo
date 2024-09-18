@@ -1,0 +1,42 @@
+@keyframes Rolagem {
+    0%,25%{
+        top: 0px;
+    }
+    26%,50%{
+        top: -300px;
+    }
+    51%,75%{
+        top: -600px;
+    }
+    76%,100%{
+        top: -900px;
+    }
+}
+.Novidades .cotainerDoRolagemDeImagens{
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    top: 45%;
+    left: 49.4%;
+    transform: translateX(-50%);
+}
+
+.Novidades .cotainerDoRolagemDeImagens .coitanerDoContainerImagens{
+position: relative;
+width: 99%;
+height: 99%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+background-color: brown;
+overflow: hidden;
+}
+.Novidades .cotainerDoRolagemDeImagens .coitanerDoContainerImagens .coitanerImagens{
+    position: relative;
+    animation: Rolagem 10s;
+    animation-iteration-count: infinite;
+}
+.Novidades .cotainerDoRolagemDeImagens .coitanerDoContainerImagens .coitanerImagens .imgRolagem{
+    width: 100%;
+    height: 296px;
+}

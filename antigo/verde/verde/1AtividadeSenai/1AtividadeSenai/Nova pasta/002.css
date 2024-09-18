@@ -1,0 +1,219 @@
+
+:root {
+    --cor-HeaderRodape:rgb(0, 0, 0);
+    --cor-letras: rgb(255, 255, 255);
+    --cor-letras-hover: rgb(0,0,0);
+    --cor-background-hover: rgb(255,255,255); 
+    --cor-propaganda: rgba(4, 63, 12, 0.842);
+    --cor-fundo-links: rgba(145, 20, 20, 0.795);
+    --cor-fundo-links-hover: rgba(255, 255, 255, 0.719);
+    --cor-letras-links: rgb(255, 255, 255);
+    --cor-letras-links-hover: rgb(0, 0, 0);
+    --cor-background-buscar: rgb(255, 255, 255);
+    --cor-background-buscar-letra: rgb(0, 0, 0);
+    --cor-background-buscar-hover: rgba(161, 161, 161, 0.616);
+    --cor-background-buscar-letra-hover: rgb(255, 255, 255);
+    --cor-fundo-input: rgb(150, 150, 150);
+    --cor-letra-input: rgb(255, 255, 255);
+    --cor-letra-botao-hover: rgb(255, 255, 255);
+    --cor-fundo-botao-hover: rgb(0, 0, 0);
+}
+body {
+    font-family:Verdana, sans-serif;
+    width: 100%;
+    margin: 0px;
+}
+.topo{
+    height: 188px;
+    background-color: var(--cor-HeaderRodape);
+}
+H1 {
+    width: 500px;
+    height: 68px;
+    left: 23px;
+    top: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 84px;
+    color: var(--cor-letras);
+    margin: 0px;
+    cursor:default;
+}
+.buscar {
+    width: 20%;
+    height: 50px;
+    left: 40px;
+    top: 139px;
+    font-size: 30px;
+    margin-top: 70px;
+}
+.buscar::placeholder{
+    color: var(--cor-background-buscar-letra);
+}
+.buscar:hover,.buscar:hover::placeholder{
+    background-color: var(--cor-background-buscar-hover);
+    color: var(--cor-background-buscar-letra-hover);
+}
+.logo{
+    float:right;
+    left: 1622px;
+    top: 0px;
+    position: static;
+    height: 188px;
+}
+.propaganda{
+    background-color: var(--cor-propaganda);
+    width: 20%;
+    height: 500px;
+    float: left;
+}
+.rodape{
+    clear: both; 
+    background-color: var(--cor-HeaderRodape);
+    overflow: auto;
+}
+p{
+    color:var(--cor-letras);
+}
+.rp{
+    width: 33%;
+    text-align: center;
+    float:left;
+
+}
+.rl{
+    width: 33%;
+    float: left;
+    text-align: center;
+
+}
+.rd{
+    width: 33%;
+    float: left;
+    text-align: center;
+
+}
+#email,#localicacao,#telefone, textarea{
+    border-radius: 118.5px;
+    background-color: var(--cor-fundo-input);
+    
+}
+input#email::placeholder,input#localicacao::placeholder,input#telefone::placeholder, textarea::placeholder{
+    color: var(--cor-letra-input);
+    text-align: center;
+}
+
+label{
+    height: 50px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    float: left;
+    padding-top: 15px;
+}
+#email,#localicacao,#telefone{
+    width: 500px;
+    height: 50px;
+    border-color: black;
+    float: right;
+    text-align: center;
+}
+.informacoes{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 80%;
+    float: right;
+}
+form{
+    height: 100%;
+    display: grid;
+    justify-content:  center;
+    align-items: center;
+}
+textarea{
+    margin: auto;
+    width: 800px;
+    height: 80px;
+    border-color: black;
+    text-align: center;
+    resize: none
+}
+textarea::placeholder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+button{
+    width: 90px;
+    margin: auto;
+    height: 50px;
+    border-radius: 118.5px;
+    border-color: red;
+    transition: all 1s;
+}
+button:hover{
+    background-color: var(--cor-fundo-botao-hover);
+    color: var(--cor-letra-botao-hover);
+    cursor: pointer;
+    border-radius: 118.5px;
+}
+/* menu */
+.top{
+    float: right;
+    margin: 0px;
+    padding-top: 36px;
+    padding-right: 2px;
+}
+.top ul{
+    list-style: none;
+    padding: 12px 0px 0px 0px;  
+}
+.top ul li{
+    display: inline;
+    position: relative;
+}
+.top ul li a{
+    text-decoration: none;
+    color: var(--cor-letras-links);
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--cor-fundo-links);
+    width: 100px;
+    text-align: center;
+    transition: all 2s;
+  
+}
+.top ul li a:hover{
+    color: var(--cor-letras-links-hover);
+    background-color: var(--cor-fundo-links-hover);
+}
+/*sub menu*/
+.top ul ul{
+    position: absolute;
+    display: none;
+    padding: 0px;
+}
+.top ul ul{
+    width: 60px;
+    text-align: center;
+    left: 0px;
+}
+.top ul ul a{
+    display: block;
+}
+.top ul li:hover ul{
+    display: block;
+    
+}
+
+
+/*
+
+*/

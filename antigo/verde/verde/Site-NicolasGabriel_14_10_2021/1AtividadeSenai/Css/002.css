@@ -1,0 +1,88 @@
+:root{
+    --cor-fundoinputs: rgb(128, 128, 128);
+    --cor-placeholder: rgb(255, 255, 255);
+    --cor-bordaInpunt: rgb(0, 0, 0);
+    --cor-bordabotaoenviar: rgb(255, 0, 0);
+    --cor-fundobotaoenviarhover: rgb(0, 0, 0);
+    --cor-letrabotaoenviarhover: rgb(255, 255, 255);
+    --cor-botaobordahover: rgb(13, 0, 131);
+    --cor-fundoform: rgb(207, 207, 207);
+    --cor-bordaform: rgb(0, 0, 0);
+    --cor-letralabel: rgb(0, 0, 0);
+}
+#wrap{
+    background: url("../Img/fundoDoFundoDoLogin.jpg");
+    background-size: 100%;
+}
+.informacoes{
+    background-color: var(--cor-fundoform);
+    border: 3px solid var(--cor-bordaform);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+    width: 80%;
+}
+form textarea{
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    resize: none;
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content:center;
+    align-items: center;
+}
+textarea::placeholder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
+}
+form button{
+    width: 90px;
+    margin: auto;
+    height: 50px;
+    border-radius: 118.5px;
+    border-color: var(--cor-bordabotaoenviar);
+    transition: all 1s;
+}
+form button:hover{
+    background-color: var(--cor-fundobotaoenviarhover);
+    color: var(--cor-letrabotaoenviarhover);
+    cursor: pointer;
+    border-radius: 118.5px;
+    border-color:var(--cor-botaobordahover);
+}
+#email,#localicacao,#telefone, textarea{
+    border-radius: 118px;
+    border: 2px solid var(--cor-bordaInpunt);
+    background-color: var(--cor-fundoinputs);
+    
+}
+form input::placeholder,form textarea::placeholder{
+    color: var(--cor-placeholder);
+    text-align: center;
+}
+form label{
+    text-transform: uppercase; 
+    height: 50px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    float: left;
+    padding-top: 15px;
+    color: var(--cor-letralabel);
+}
+#email,#localicacao,#telefone{
+    width: 500px;
+    height: 50px;
+    border-color: black;
+    float: right;
+    text-align: center;
+}

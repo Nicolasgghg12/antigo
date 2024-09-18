@@ -1,0 +1,57 @@
+@keyframes animacao{
+    0%{margin-top: 0px;}
+    100%{margin-top: 100px;}
+}
+@keyframes animacao2 {
+    0%{}
+    100%{width: 200px;height: 200px;transform: rotate(240deg);}
+}
+@keyframes animacao3 {
+    0%{}
+    40%{width: 80px;background-color: yellow;}
+    80%{width: 10px;background-color: red;}
+}
+:root{
+    --tamanhocirculo: 200px;
+    --velocidadecicurlo: 2s;
+    --largura: 300px;
+    --altura: 100px;
+}
+
+.container{
+    position: absolute;
+    width: var(--tamanhocirculo);
+    height: var(--tamanhocirculo);
+    background: red;
+    border-radius: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: animacao;
+    animation-duration: var(--velocidadecicurlo);
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+.container2{
+    position: absolute;
+    width: var(--largura);
+    height: var(--altura);
+    background: black;
+    border-radius: 50%;
+    top:75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: animacao2;
+    animation-duration: var(--velocidadecicurlo);
+    animation-iteration-count: infinite;
+    
+}
+.container3{
+    width: 200px;
+    height: 40px;
+    background-color: green;
+    animation-name: animacao3;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    
+}

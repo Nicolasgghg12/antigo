@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,serif;
+}
+body{
+    background: url(../_Img/fundo.jpg);
+    background-size: 100%;
+}

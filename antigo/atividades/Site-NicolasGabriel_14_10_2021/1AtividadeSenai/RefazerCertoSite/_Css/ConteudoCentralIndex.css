@@ -1,0 +1,107 @@
+/* divs centrais do centro */
+#Wrap .coitainerMeio .containerCentro{
+    width: 450px;
+    height: 600px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid black;
+    background: rgb(206, 206, 206);
+}
+/* div Sobre nos */
+#Wrap .coitainerMeio .ContainerInformacoesSite{
+    text-align: center;
+}
+
+/* sobre nos h2 */
+#Wrap .coitainerMeio .ContainerInformacoesSite h2{
+    font-size: 30px;
+}
+
+/* sobre nos p */
+#Wrap .coitainerMeio .ContainerInformacoesSite p{
+    font-size: 20px;
+}
+
+/* div Descontos */
+#Wrap .coitainerMeio .ContainerDescontos{
+    position: relative;
+    top: 0;
+    left: 100%;
+    transform: translate(-100%);
+    top: -600px;    
+    flex-direction: column
+}
+
+/* Descontos h2*/
+#Wrap .coitainerMeio .ContainerDescontos h2{
+    font-size: 30px;
+}
+/* Descontos h3*/
+#Wrap .coitainerMeio .ContainerDescontos h3{
+    font-size: 20px;
+}
+/* div Novidades*/
+#Wrap .coitainerMeio .ContainerNovidades{
+    position: relative;
+    height: 340px;
+    width: 910px;
+    top: -585px;
+    padding: 20px;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+/* section lado esquedo */
+#Wrap .coitainerMeio .ContainerNovidades .ladoEsquerdo{
+    text-align: center;
+
+}
+/* section lado direito*/
+#Wrap .coitainerMeio .ContainerNovidades .ladoDireito .ocuparEspacoCerto{
+    width: 250px;
+    height: 300px;;
+}
+@keyframes Rolagem {
+    0%,25%{
+        top: 0px;
+    }
+    26%,50%{
+        top: -300px;
+    }
+    51%,75%{
+        top: -610px;
+    }
+    76%,100%{
+        top: -920px;
+    }
+}
+
+/* container que contem o container de imagens */
+.ladoDireito .cotainerDoRolagemDeImagens{
+    position: absolute;
+    width: 320px;
+    height: 300px;
+    top: 0;
+    top: 20px;
+    right: 0;
+    right: 20px;
+    overflow: hidden;
+    border: 4px solid black;
+    border-radius: 8px;
+}
+/* container que roda */
+.ladoDireito .cotainerDoRolagemDeImagens .coitanerDoContainerImagens{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: Rolagem 10s;
+    animation-iteration-count: infinite;
+}
+/* container das imagens */
+.ladoDireito .cotainerDoRolagemDeImagens .coitanerDoContainerImagens .coitanerImagens .imgRolagem{
+    width: 320px;
+    height: 300px;
+    
+}

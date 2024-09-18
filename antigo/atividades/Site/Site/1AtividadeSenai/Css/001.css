@@ -1,0 +1,77 @@
+:root{
+    --conteudo-site: rgb(255, 255, 255);
+    --cor-NovidadeSobre: rgb(255,255,255);
+    --background-descontos: rgb(156, 156, 156);
+    --cor-borda: rgb(0,0,0);
+    --cor-Conteudo: rgba(102, 43, 87, 0.692);
+}
+/* div que contem todo centro */
+.conteudo{
+    text-align: justify;
+    background:url("../Img/fundoDoFundoDoLogin.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 654px;
+}
+h2{
+    text-align: center;
+}
+/* div da esquerda */
+.conteudo .SobreSite{
+    float: left;
+    width: 30%;
+    margin-left: 1.5%;
+    height: 650px;
+    border: 2px solid var(--cor-borda);
+    background-color: var(--cor-NovidadeSobre);
+}
+.conteudo .SobreSite p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px 10px;
+}
+.conteudo .SobreSite h2{
+    position: relative;
+    top: 5%;
+    transform: translateY(-25%);
+}
+/* div do meio */
+.conteudo .Novidades{
+    float: left;
+    width: 30%;
+    margin-left: 3%;
+    height: 650px;
+    border: 2px solid var(--cor-borda);
+    background-color: var(--cor-NovidadeSobre);
+}
+.conteudo .Novidades h2{
+    position: relative;
+    top: 25%;
+    
+}
+.conteudo .Novidades p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    padding: 0px 10px;
+}
+/* div da direita */
+.conteudo .Descontos{
+    border: 2px solid var(--cor-borda);
+    float: left;
+    background: var(--background-descontos);
+    width: 30%;
+    margin-left: 3%;
+    height: 650px;
+    text-align: center;
+}
+.conteudo .Descontos .image1{
+    width: 70%;
+    height: 25%;
+}
+.conteudo .Descontos .image2{
+    width: 50%;
+    height: 40%;
+}

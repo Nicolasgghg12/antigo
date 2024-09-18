@@ -1,0 +1,157 @@
+:root {
+    --cor-FundoHeaderRodape: rgb(0, 0, 0);
+    --cor-NomeSite: rgb(255, 255, 255);
+    --cor-LetrasLinks: rgb(255, 255, 255);
+    --cor-FundoLinks: rgba(145, 20, 20, 0.795);
+    --cor-LetrasLinksHover: rgb(0,0,0);
+    --cor-FundoLinksHover: rgb(255,255,255);
+    --cor-LetrasRodape: rgb(255, 255, 255);
+    --cor-Propaganda: rgba(18, 82, 18, 0.603);
+    --cor-LetrasBuscar: rgb(0, 0, 0);
+    --cor-FundoBuscar: rgb(255, 255, 255);
+    --cor-LetrasBuscarHover: rgb(255, 255, 255);
+    --cor-FundoBuscarHover: rgb(78, 78, 78);
+}
+
+body{
+    font-family: sans-serif,serif;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 130px;
+    
+}
+
+/* parte do header */
+h1{
+    color: var(--cor-NomeSite);
+    cursor: default;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--cor-FundoHeaderRodape);
+    height: 130px;
+    top: 0;
+    z-index: 1;
+}
+header img {
+    float: right;
+    height: 130px;
+}
+/* links */
+header ul{
+    margin-top: 40px;
+    text-align: right;
+    
+}
+header li, header a{
+    display: inline-block;
+    background-color: var(--cor-FundoLinks);
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+header li a{
+    text-decoration: none;
+    color: var(--cor-LetrasLinks);
+    
+}
+/* teste de por animacao */
+header li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0.603);
+    transition: all 2s;
+
+}
+header li a:hover::before{
+    width: 100%;
+    transition: all 2s;
+
+}
+/* parte botao aparecer e desaparecer lista links */
+header ul ul{
+    position: relative;
+}
+header ul ul{
+    display: none;
+    position: absolute;
+    padding: 0px;
+}
+
+header ul li:hover ul{
+    display: inline-block;
+    margin-top: 30px;
+    right: 0;
+    width: 100px;
+}
+/* parte buscar */
+.buscar{
+    float: left;
+    width: 20%;
+    height: 50px;
+    background-color: var(--cor-FundoBuscar);
+}
+.buscar::placeholder{
+    color:var(--cor-LetrasBuscar);
+    text-align: left;
+}
+.buscar:hover, .buscar:hover::placeholder{
+    background: var(--cor-FundoBuscarHover);
+    color:var(--cor-LetrasBuscarHover)
+}
+/* Propaganda */
+
+.propaganda{
+    clear: both;
+    background-color: var(--cor-Propaganda);
+    height: 100px;
+    width: 100%;
+    float: left;
+}
+
+/* parte do rodapé */
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: var(--cor-FundoHeaderRodape);
+    text-align: center;
+    position: relative;
+    clear: both;
+    display: flex;
+}
+
+footer p{
+    color: white;
+    width: 33%;
+    margin-left: 6%;
+}
+footer .centralizar{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* rodapé redes sociais */
+
+footer .redes{
+    position: absolute;
+    top : 0;
+    height: 100px;
+}
+footer .redes ul li{
+    display: block;
+}
+footer .redes img{
+    width: 20px;
+    margin-top: 2px;
+    border-radius: 50%;
+}

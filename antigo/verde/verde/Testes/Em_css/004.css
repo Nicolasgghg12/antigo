@@ -1,0 +1,41 @@
+:root{
+    --color-fundo: rgba(34, 41, 37);
+    --color-hover: rgba(118, 180, 145);
+    --color-letra: rgb(231, 241, 236);
+}
+.top ul{
+    background-color: var(--color-fundo);
+    list-style: none;
+    padding: 0px;  
+    
+}
+.top ul li{
+    display: inline;
+    position: relative;
+}
+.top ul li a{
+    text-decoration: none;
+    color: var(--color-letra);
+    display: inline-block;
+    padding: 10px;
+}
+.top ul li a:hover{
+    background-color: var(--color-hover);
+}
+/*sub menu*/
+.top ul ul{
+    position: absolute;
+    display: none;
+}
+.top ul ul{
+    width: 60px;
+    text-align: center;
+    left: 0px;
+}
+.top ul ul a{
+    display: block;
+}
+.top ul li:hover ul{
+    display: block;
+    
+}

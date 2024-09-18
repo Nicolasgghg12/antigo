@@ -1,0 +1,35 @@
+div{
+    background-color: darkslategray;
+    width: 100%;
+    height: 200px;
+}.header{
+    background-color: floralwhite;
+    width: 100%;
+    height: 200px;
+}
+.conteudo-1{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}
+.esquerda{
+    background-color: brown;
+    width: 100%;
+    height: 200px;
+}
+.direita{
+    background-color: lightcoral;
+    width: 100%;
+    height: 200px;
+    float: right;
+}
+.conteudo-2{
+    background-color:  rebeccapurple;
+    width: 100%;
+    height: 200px;
+}
+.foother{
+    background-color: blue;
+    width: 100%;
+    height: 200px;
+}    

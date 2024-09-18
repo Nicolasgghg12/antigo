@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mania - Home</title>
+    <link rel="Short Icon" href="../_Img/logo.png" >
+    <link rel="stylesheet" href="../_Css/Reset.css" >
+    <link rel="stylesheet" href="../_Css/Menu.css" >
+    <link rel="stylesheet" href="../_Css/Rodape.css" >
+    <link rel="stylesheet" href="../_Css/Central.css" >
+    <link rel="stylesheet" href="../_Css/ConteudoCentralContatos.css" >
+    <script src="../_Js/Contatos.js" defer></script>
+</head>
+<body>
+    <div id="Wrap">
+        <div id="Menu">
+            <img src="../_Img/logo.png" alt="Logo">
+            <h1>GameMania</h1>
+            <input class="buscar" type="search" placeholder="Buscar por..."> 
+            <ul>
+                <li><a href="Index.html">GameMania</a></li>
+                <li><a href="Jogos.html">Jogos</a></li>
+                <li><a href="Contatos.html">Contatos</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Cadastro.html">Cadastrar</a></li>
+                <li><a>Redes</a>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="coitainerMeio">
+            <form action="#" method="get">
+                <div>
+                    <label for="email">Digite seu email para contato</label>
+                    <input class="caixaDeEntrada caixaDeEntradaEmail" type="email" id="email" name="User_Email" placeholder="XXXXXXXXXX@gmail.com" required>
+                </div>
+
+                <div>
+                    <label for="telefone">Digite seu telefone para contato</label>
+                    <input class="caixaDeEntrada caixaDeEntradaEmail" type="tel" id="telefone" name="User_Telefone" placeholder="(+XX) XX XXXXX-XXXX" maxlength="19" on onkeypress="mascaraTelefone()" required>
+                </div>
+
+                <div>
+                    <label for="localicacao">Digite seu cep</label>
+                    <input class="caixaDeEntrada caixaDeEntradaEmail" type="text" id="localicacao" name="User_Local" placeholder="XXXXX-XXX" minlength="9" maxlength="9"  required>
+                </div>
+
+                    <textarea placeholder="Digite algo para melhorarmos ou de seu interesse"></textarea>
+                    <textarea placeholder="Deixe-nos seu feedback"></textarea>
+
+                    <button type="submit" value="Enviar" >Enviar</button>
+            
+            </form>
+        </div>
+
+        <footer>
+            <div class="redes">
+                <ul>
+                    <a href="#"><img class="a" title="Facebook" alt="Icone Facebook" src="../_Img/face.png"></a>
+                    <a href="#"><img class="b" title="WhatsApp" alt="Icone WhatsApp" src="../_Img/whats.jpg"/></a>
+                    <a href="#"><img class="c" title="Instagram" alt="Icone Instagram" src="../_Img/insta.jpg"/></a>
+                </ul>
+            </div>
+            <div>Sobre Game Mania</br> Somos um site de e-commerce, procuramos atender todas suas necessiaddes, conforme consseguimos</p></div>
+            <div>Localizamos em:</br>Rua tal</br>Bairro tal</br>Número tal</div>
+            <div>Desenvolvedores</br>Nicolas Gabriel</div>
+        </footer>
+    </div>
+</body>
+</html>

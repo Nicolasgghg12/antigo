@@ -1,0 +1,24 @@
+/* parte do rodapé */
+
+#Wrap footer {
+    height: 100px;
+    width: 960px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    clear: both;
+    display: flex;
+    margin: auto;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+   
+/* rodapé redes sociais */
+
+#Wrap footer .redes img{
+    width: 30px;
+    border-radius: 50%;
+    display: block;
+}

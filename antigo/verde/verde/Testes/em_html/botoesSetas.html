@@ -1,0 +1,52 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Sitetestes</title>
+			<meta charset="UTF-8" />
+			<style>
+				.ContainerContainerImagensRolagemDeImagens .ContainerSetasParaVoltarOuAvancarImagem{
+    position: absolute;
+    z-index: 2;
+    font-size: 40px;
+    color: var(--colorSetas);
+    width: 100%;
+    text-align: center;
+    transform: rotate(90deg);
+}
+.ContainerContainerImagensRolagemDeImagens .ContainerSetasParaVoltarOuAvancarImagem .SubirImagen{
+    position: absolute;
+    right: 0;
+    right: 260px;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    top: -80px;
+}
+.ContainerContainerImagensRolagemDeImagens .ContainerSetasParaVoltarOuAvancarImagem .SubirImagen h2{
+    cursor: pointer;
+}
+.ContainerContainerImagensRolagemDeImagens .ContainerSetasParaVoltarOuAvancarImagem .DescerImagen{
+    position: absolute;
+    right: 0;
+    right: -70px;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    top: -80px;
+}
+.ContainerContainerImagensRolagemDeImagens .ContainerSetasParaVoltarOuAvancarImagem .DescerImagen h2{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+			</style>
+		</head>
+
+
+		<body>
+			<div class="ContainerSetasParaVoltarOuAvancarImagem">
+				<div class="SubirImagen"><h2 onclick="SubirImagen()"><</h2></div>
+				<div class="DescerImagen"><h2 onclick="DescerImagen()">></h2></div>
+			</div>
+		</body>
+	</html>

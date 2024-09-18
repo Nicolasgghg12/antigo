@@ -1,0 +1,13 @@
+.meio{
+width: 500px;
+height: 500px;
+border: 2px solid black;
+border-radius: 50%;
+background-color: gray;
+}
+.meio:hover{
+    border-color: greenyellow;
+    background-color: violet;
+    cursor: pointer;
+    }
+    

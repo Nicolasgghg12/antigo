@@ -1,0 +1,83 @@
+:root{
+    --sla: 3px;
+}
+body{
+margin:0;
+padding: 0;
+}
+.container{
+    width: 150px;
+    height: 150px;
+}
+.container1{
+    background-color: green;
+    position: fixed;
+    width: 100%;
+}
+.container3{
+    background-color: red;
+    top: 150px;
+    position: relative;
+}
+#aparecerSumir{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 150px;
+    right: 0;
+    z-index: 1;
+}
+
+
+/*  comeco do login */
+:root{
+    --color-label: rgb(255,255,255);
+    --color-backgroundLogar: rgb(77, 77, 77);
+    --color-botaofechar: rgb(255, 0, 0);
+}
+.container2{
+    top: 150px;
+    background-color: var(--color-backgroundLogar);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
+.container2 *{
+   display: block;
+   position: relative;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.container2 label {
+    color: var(--color-label);
+}
+.container2 input {
+    width: 70%;
+    height: 40px;
+}
+.container2 input::placeholder{
+    text-align: center;
+}
+.container2 .botaoEnviar{
+    top: 35%;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+}
+.container2 .botaoFechar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(1%);
+    background-color: var(--color-backgroundLogar);
+    color: var(--color-botaofechar);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+

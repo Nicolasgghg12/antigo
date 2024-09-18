@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <title>Login-GAME MANIA</title>
+    <link rel="shortcut icon" href="../Img/logo.png" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="../Css/cadastro.css" rel="stylesheet" />
+    <script src='../JavaScript/voltar.js' defer onload="aparecer()" ></script>
+</head>
+<body>
+    <div class="container1">
+        <form>
+            <label for="EmailCadastrar" class="labelDeEmail">Email:</label>
+            <input type="email" placeholder="XXXXXX@gmail.com" id="EmailCadastrar" required>
+            <label for="SenhaCadastrar" class="labelDeSenha">Senha:</label>
+            <input type="password" placeholder="***********" id="SenhaCadastrar" required>
+            <label for="SenhaCadastrar" class="labelDeSenha">Confirmar Senha:</label>
+            <input type="password" placeholder="***********" id="SenhaCadastrar" required="">
+            <button type="submite" class="botaoEnviar" onclick="voltar()">Cadastrar</button>
+        </form>
+        <button type="button" class="botaoFechar" onclick="voltar()">X</button>
+    </div>
+</body>
+</html>
